@@ -22,7 +22,7 @@ export class AppComponent {
     },
     {
       title: 'Daily Evaluations',
-      url: '/dailyEvaluations',
+      url: '/daily-evaluations',
       icon: 'list'
     },
     {
@@ -32,7 +32,7 @@ export class AppComponent {
     },
     {
       title: 'Problem Solving',
-      url: '/problemSolving',
+      url: '/problem-solving',
       icon: 'list'
     },
     {
@@ -56,12 +56,12 @@ export class AppComponent {
     },
     {
       title: 'About Us',
-      url: '/aboutUs',
+      url: '/about-us',
       icon: 'home'
     },
     {
       title: 'Contact Us & Feedback',
-      url: '/contactus',
+      url: '/contact-us',
       icon: 'home'
     }
   ]
