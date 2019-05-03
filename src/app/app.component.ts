@@ -11,16 +11,60 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
-      url: '/home',
+      title: 'Affirmations',
+      url: '/affirmations',
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
+      title: 'Blessings',
+      url: '/blessings',
       icon: 'list'
-    }
+    },
+    {
+      title: 'Daily Evaluations',
+      url: '/dailyEvaluations',
+      icon: 'list'
+    },
+    {
+      title: 'Grateful',
+      url: '/grateful',
+      icon: 'list'
+    },
+    {
+      title: 'Problem Solving',
+      url: '/problemSolving',
+      icon: 'list'
+    },
+    {
+      title: 'Quotes',
+      url: '/quotes',
+      icon: 'list'
+    },
+    {
+      title: 'To Do',
+      url: '/todo',
+      icon: 'list'
+    },
+
   ];
+
+  public footerPages=[
+    {
+      title: 'Settings',
+      url: '/settings',
+      icon: 'home'
+    },
+    {
+      title: 'About Us',
+      url: '/aboutUs',
+      icon: 'home'
+    },
+    {
+      title: 'Contact Us & Feedback',
+      url: '/contactus',
+      icon: 'home'
+    }
+  ]
 
   constructor(
     private platform: Platform,

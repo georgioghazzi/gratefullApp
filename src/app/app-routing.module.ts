@@ -4,17 +4,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'quotes',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'affirmations', loadChildren: './pages/affirmations/affirmations.module#AffirmationsPageModule' },
+  { path: 'blessings', loadChildren: './pages/blessings/blessings.module#BlessingsPageModule' },
+  { path: 'daily-evaluations', loadChildren: './pages/daily-evaluations/daily-evaluations.module#DailyEvaluationsPageModule' },
+  { path: 'grateful', loadChildren: './pages/grateful/grateful.module#GratefulPageModule' },
+  { path: 'problem-solving', loadChildren: './pages/problem-solving/problem-solving.module#ProblemSolvingPageModule' },
+  { path: 'quotes', loadChildren: './pages/quotes/quotes.module#QuotesPageModule' },
+  { path: 'todo', loadChildren: './pages/todo/todo.module#TodoPageModule' }
 ];
 
 @NgModule({
