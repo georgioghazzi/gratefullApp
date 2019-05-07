@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { NavigationBar } from '@ionic-native/navigation-bar/ngx';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
@@ -23,54 +22,50 @@ export class AppComponent {
     {
       title: 'Daily Evaluations',
       url: '/daily-evaluations',
-      icon: 'list'
+      icon: 'trophy'
     },
     {
       title: 'Grateful',
       url: '/grateful',
-      icon: 'list'
+      icon: 'text'
     },
     {
       title: 'Problem Solving',
       url: '/problem-solving',
-      icon: 'list'
+      icon: 'thumbs-up'
     },
     {
       title: 'Quotes',
       url: '/quotes',
-      icon: 'list'
+      icon: 'text'
     },
     {
       title: 'To Do',
       url: '/todo',
-      icon: 'list'
+      icon: 'checkbox'
     },
 
   ];
 
-  public footerPages=[
+  public footerPages = [
     {
       title: 'Settings',
       url: '/settings',
-      icon: 'home'
+      icon: 'settings'
     },
     {
       title: 'About Us',
       url: '/about-us',
-      icon: 'home'
+      icon: 'happy'
     },
     {
       title: 'Contact Us & Feedback',
       url: '/contact-us',
-      icon: 'home'
+      icon: 'contact'
     }
   ]
 
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
-  ) {
+  constructor(private platform: Platform, private splashScreen: SplashScreen, private statusBar: StatusBar, private navigationBar: NavigationBar) {
     this.initializeApp();
   }
 
@@ -78,6 +73,9 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.statusBar.hide();
+      this.navigationBar.hideNavigationBar();
+      
     });
   }
 }

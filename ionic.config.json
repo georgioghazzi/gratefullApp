@@ -1,5 +1,7 @@
 {
   "name": "gratefulApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
